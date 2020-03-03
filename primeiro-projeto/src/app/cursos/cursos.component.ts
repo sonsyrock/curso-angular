@@ -14,13 +14,13 @@ export class CursosComponent implements OnInit {
 
   cursos: string[];
 
-  constructor(private cursosService: CursosService) { //Injeção de dependência 
+  constructor(private cursosService: CursosService) { // Injeção de dependência
 
     this.nomePortal = 'http://loiane.training';
 
-    //var servico = new CursosService();
+    // var servico = new CursosService();
 
-    this.cursos=this.cursosService.getCursos();
+    this.cursos = this.cursosService.getCursos();
 
   }
 
